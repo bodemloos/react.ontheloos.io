@@ -1,0 +1,48 @@
+version: "3.8"
+services:
+  web:
+    container_name: web
+    build:
+      context: ./.docker/nginx
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    tty: true
+    restart: always
+    depends_on:
+      - frontend
+
+  frontend:
+    container_name: frontend
+    build:
+      context: ./.docker/node
+      dockerfile: Dockerfile
+    environment:
+      PORT: 5173
+      HOST: "0.0.0.0"
+    expose:
+      - 5173
+    command: yarn run dev
+    volumes:
+      - ./:/app
+    stdin_open: true
+    tty: true
+    restart: always
+
+  frontend-storybook:
+    container_name: frontend-storybook
+    build:
+      context: ./.docker/node
+      dockerfile: Dockerfile
+    init: true
+    image: frontend-storybook
+    command: yarn run storybook
+    ports:
+      - 6006:6006
+    expose:
+      - 6006
+    volumes:
+      - ./:/app
+    restart: always
+    depends_on:
+      - frontend

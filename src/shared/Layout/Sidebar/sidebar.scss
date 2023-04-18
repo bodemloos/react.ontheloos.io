@@ -1,0 +1,13 @@
+.sidebar::before {
+  content: "";
+  display: block;
+  background: url(/sidebar-background.jpeg) center 0px no-repeat;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  filter: opacity(0.08);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
