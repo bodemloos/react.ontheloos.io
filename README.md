@@ -1,10 +1,12 @@
-# SETUP
+
+# Dashboard - Docker - React - Typescript - Storybook - Vite - Vitest - Chakra UI - Zustand - Nginx - Ky
 
 ## Installation <a name="installation"></a>
 
 #### run following command to init and run the docker containers:
 
-##### run frontend on 0.0.0.0
+##### frontend served on http://0.0.0.0/
+##### storybook served on http://0.0.0.0:6006/
 
 ```
 make init
@@ -33,6 +35,7 @@ make down
 - [React Query](https://react-query-v3.tanstack.com/) - react hooks to facilitate fetching/updating/caching data on the server
 - [Zustand](https://github.com/pmndrs/zustand) - easy state-management
 - [Storybook](https://storybook.js.org/) - build your UI web components in isolation
+- [Ky](https://github.com/sindresorhus/ky) - tiny and elegant HTTP client based on the browser Fetch API
 
 #### Frontend UI
 
