@@ -43,8 +43,4 @@ make down
 - [Zustand](https://github.com/pmndrs/zustand) - easy state-management
 - [Storybook](https://storybook.js.org/) - build your UI web components in isolation
 - [Ky](https://github.com/sindresorhus/ky) - tiny and elegant HTTP client based on the browser Fetch API
-
-#### Frontend UI
-
 - [ChakraUI](https://chakra-ui.com/) - UI library that lets you create beautiful interfaces quickly
-- [React-toastify](https://fkhadra.github.io/react-toastify/introduction) - show notifications when something happens
