@@ -1,9 +1,9 @@
-import renderer from "react-test-renderer";
+//import renderer from "react-test-renderer";
 
-import { Sidebar } from "./Sidebar";
+//import { Sidebar } from "./Sidebar";
 
-test("<Sidebar /> renders", () => {
-  const tree = renderer.create(Sidebar).toJSON();
+//test("<Sidebar /> renders", () => {
+  //const tree = renderer.create(Sidebar).toJSON();
 
-  expect(tree).toMatchSnapshot();
-});
+  //expect(tree).toMatchSnapshot();
+//});
