@@ -34,6 +34,11 @@ make down
 
 ## Libraries/frameworks
 
+### Development
+
+- [Husky](https://github.com/typicode/husky/) - modern native Git hooks made easy
+- [ESLint](https://eslint.org/) - Find and fix problems in your JavaScript code
+
 ### Frontend
 
 - [React](https://reactjs.org/) - main frontend library
