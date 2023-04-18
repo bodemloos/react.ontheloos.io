@@ -1,5 +1,6 @@
 
-# Dashboard - Docker - React - Typescript - Storybook - Vite - Vitest - Chakra UI - Zustand - Nginx - Ky
+# Dashboard 
+## Docker - React - Typescript - Storybook - Vite - Vitest - Chakra UI - Zustand - Nginx - Ky
 
 ## Installation <a name="installation"></a>
 
