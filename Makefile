@@ -4,6 +4,8 @@ up:
 
 init:
 	docker-compose up --build -d
+	docker-compose exec frontend yarn install
+	docker-compose exec frontend yarn run dev
 	
 down:
 	docker-compose down

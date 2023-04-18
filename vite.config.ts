@@ -8,7 +8,7 @@ import { defineConfig } from "vitest/config";
 export default defineConfig({
   test: {
     globals: true,
-    setupFiles: ["./vite.testconf.setup.js"],
+    environment: "happy-dom",
   },
   plugins: [
     react(),

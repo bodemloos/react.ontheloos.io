@@ -8,3 +8,4 @@ export {
   ResourceNotFoundException,
 } from "./http";
 export { buildUrl } from "./buildUrl";
+export { render, userEvent } from "./test";

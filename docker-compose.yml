@@ -22,12 +22,13 @@ services:
       HOST: "0.0.0.0"
     expose:
       - 5173
-    command: yarn run dev
     volumes:
       - ./:/app
     stdin_open: true
     tty: true
     restart: always
+    depends_on:
+      - frontend-storybook
 
   frontend-storybook:
     container_name: frontend-storybook
@@ -44,5 +45,3 @@ services:
     volumes:
       - ./:/app
     restart: always
-    depends_on:
-      - frontend
